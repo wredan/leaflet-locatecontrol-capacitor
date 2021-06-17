@@ -1,0 +1,4 @@
+.sass-cache
+Gruntfile.js
+node_modules/*
+screenshot.png

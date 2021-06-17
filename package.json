@@ -1,0 +1,37 @@
+{
+  "name": "capacitor-leaflet.locatecontrol",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Warcreed/capacitor-leaflet-locatecontrol",
+  "description": "A useful control to geolocate the user with many options, coming from https://github.com/domoritz/leaflet-locatecontrol. This version use @capacitor/geolocation.",
+  "main": "src/L.Control.Locate.js",
+  "author": "Danilo Santitto <danilo.santitto@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Warcreed/capacitor-leaflet-locatecontrol.git"
+  },
+  "keywords": [
+    "leaflet",
+    "locate",
+    "plugin",
+    "capacitor",
+    "geolocation"
+  ],
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "build": "grunt",
+    "bump:minor": "grunt bump-only:minor && grunt && grunt bump-commit",
+    "bump:patch": "grunt bump-only:patch && grunt && grunt bump-commit",
+    "start": "grunt connect"
+  },
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-bump": "0.8.0",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.0.0"
+  },
+  "dependencies": {
+    "@capacitor/geolocation": "^1.0.1"
+  }
+}
