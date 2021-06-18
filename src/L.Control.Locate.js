@@ -4,7 +4,7 @@ Copyright (c) 2021 Danilo Santitto current Capacitor version
 
 This file is part of the leaflet locate control. It is licensed under the MIT license.
 - You can find the original project version at: https://github.com/domoritz/leaflet-locatecontrol
-- You can find the Capacitor project version at: https://github.com/Warcreed/capacitor-leaflet-locatecontrol
+- You can find the Capacitor project version at: https://github.com/Warcreed/leaflet-locatecontrol-capacitor
 */
 import { Geolocation } from '@capacitor/geolocation';
 

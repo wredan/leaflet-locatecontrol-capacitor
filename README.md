@@ -1,4 +1,4 @@
-# Capacitor-Leaflet.locatecontrol
+# Leaflet.locatecontrol-capacitor
 
 Version of [Leaflet.locatecontrol](https://github.com/domoritz/leaflet-locatecontrol) that implements [@capacitor/geolocation](https://capacitorjs.com/docs/apis/geolocation)
 
