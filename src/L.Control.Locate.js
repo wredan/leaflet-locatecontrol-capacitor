@@ -469,7 +469,8 @@ import { Geolocation } from '@capacitor/geolocation';
          */
         _activate: async function() {
             if (!this._active) {
-                let coords =  await Geolocation.getCurrentPosition({ enableHighAccuracy: true });
+                this._active = true;
+                let coords = await Geolocation.getCurrentPosition({ enableHighAccuracy: true });
                 this._setEvent(coords.coords.latitude, coords.coords.longitude, coords.coords.accuracy);              
                 this.geolocationWatcherId = await Geolocation.watchPosition({
                     enableHighAccuracy: true
@@ -480,9 +481,7 @@ import { Geolocation } from '@capacitor/geolocation';
                         this._onLocationError(e);
                     }               
                 });
-
-                this._active = true;
-
+            
                 // bind event listeners               
                 this._map.on('dragstart', this._onDrag, this);
                 this._map.on('zoomstart', this._onZoom, this);
