@@ -472,8 +472,7 @@ import { Geolocation } from '@capacitor/geolocation';
                 let coords =  await Geolocation.getCurrentPosition({ enableHighAccuracy: true });
                 this._setEvent(coords.coords.latitude, coords.coords.longitude, coords.coords.accuracy);              
                 this.geolocationWatcherId = await Geolocation.watchPosition({
-                    enableHighAccuracy: true,                    
-                    timeout: 200
+                    enableHighAccuracy: true
                 }, (position) => {
                     try  {
                         this._onLocationFound(position);
