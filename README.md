@@ -8,6 +8,7 @@ Version of [Leaflet.locatecontrol](https://github.com/domoritz/leaflet-locatecon
 - Copy this repository `src` folder into `node_modules/leaflet.locatecontrol/`
 - Make sure [@capacitor/geolocation](https://capacitorjs.com/docs/apis/geolocation) is installed running `npm i @capacitor/geolocation`
 
+Check the awesome [Leaflet.locatecontrol](https://github.com/domoritz/leaflet-locatecontrol) project for complete docs.
 
 ## Screenshot
 
