@@ -495,15 +495,16 @@ import { Geolocation } from '@capacitor/geolocation';
                         var deviceorientation = function () {
                             L.DomEvent.on(window, oriAbs ? 'deviceorientationabsolute' : 'deviceorientation', _this._onDeviceOrientation, _this);
                         };
-                        if (DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission === 'function') {
-                            DeviceOrientationEvent.requestPermission().then(function (permissionState) {
-                                if (permissionState === 'granted') {
-                                    deviceorientation();
-                                }
-                            });
-                        } else {
-                            deviceorientation();
-                        }
+                        deviceorientation();
+                        // if (DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission === 'function') {
+                        //     DeviceOrientationEvent.requestPermission().then(function (permissionState) {
+                        //         if (permissionState === 'granted') {
+                        //             deviceorientation();
+                        //         }
+                        //     });
+                        // } else {
+                        //     deviceorientation();
+                        // }
                     }
                 }
             }
