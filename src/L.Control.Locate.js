@@ -291,7 +291,7 @@ import { Geolocation } from '@capacitor/geolocation';
             },
             /** This event is called in case of any location error that is not a time out error. */
             onLocationError: function(err, control) {
-                alert(err.message);
+                console.log(err.message);
             },
             /**
              * This event is called when the user's location is outside the bounds set on the map.
@@ -299,7 +299,7 @@ import { Geolocation } from '@capacitor/geolocation';
              */
             onLocationOutsideMapBounds: function(control) {
                 control.stop();
-                alert(control.options.strings.outsideMapBoundsMsg);
+                console.log(control.options.strings.outsideMapBoundsMsg);
             },
             /** Display a pop-up when the user click on the inner marker. */
             showPopup: true,
@@ -732,7 +732,7 @@ import { Geolocation } from '@capacitor/geolocation';
          */
         _onLocationError: function(err) {
             // ignore time out error if the location is watched
-            if (err.code == 3 && this.options.locateOptions.watch) {
+            if (this.geolocationWatcherId) {
                 return;
             }
 
